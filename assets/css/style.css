@@ -148,11 +148,12 @@ html[xmlns] .clearfix {
  Site styles
  --------------------------*/
 body {
-  background: #000000;
+  background: #000000 url(../img/talent_bg.jpg) no-repeat center bottom;
   color: #ffffff;
   font-family: "Arial", sans-serif;
   font-size: 100%;
   line-height: 1.5;
+  min-height: 700px;
 }
 section#content {
   width: 810px;
@@ -214,4 +215,28 @@ section#student_photos ul li div.photo_hover div.frame div.like_area a {
   width: 35px;
   display: block;
   margin-left: 6px;
+}
+header#header {
+  width: 810px;
+  margin: 0px auto;
+}
+header#header nav {
+  margin-top: 80px;
+  background: url(../img/head_repeat.png) repeat-x;
+}
+header#header nav p {
+  color: white;
+}
+header#header nav p strong {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #f3ef8d !important;
+}
+header#header a.logo {
+  position: relative;
+  top: -70px;
+  display: block;
+  background: url(../img/kaplan_talent_logo.png) no-repeat;
+  height: 279px;
+  width: 267px;
 }
