@@ -1,0 +1,154 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+html[xmlns] .clearfix {
+	display: block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+/**
+ Site defaults
+ --------------------------*/
+@bgcolor: #000;
+@appwidth: 810px;
+@appcolor: #fff;
+@appfont: "Arial";
+
+/*
+ Site styles
+ --------------------------*/
+body{
+	background: @bgcolor;
+	color: @appcolor;
+	font-family: @appfont,sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+}
+section#content{
+	width: @appwidth;
+	margin:  0px auto;
+}
+section#votes_made{
+	article.blank{
+		background: url(../img/photo_box.jpg) no-repeat;
+		height: 100px;
+		width: 135px;
+		float: left;
+	}
+}
+section#student_photos{
+	ul{
+		li{
+			float: left;
+			margin: 0px 10px 20px 0;
+			position: relative;
+			article{
+				background: url(../img/photo_box.jpg) no-repeat;
+				height: 65px;
+				width: 109px;
+				padding: 2px 0 2px 2px;
+				a{
+					img{
+						max-height: 65px;
+						max-width: 109px;
+						overflow: hidden;
+						width: 105px;
+						height: 60px;
+					}
+				}
+			}
+			div.photo_hover{
+				z-index: 10000;
+				position: absolute;
+				background: #fff;
+				border: 1px solid black;
+				height: 120px;
+				width: 150px;
+				top: -30px;
+				left: -30px;
+				display: none;
+				div.frame{
+					border: 5px solid #8a3c88;
+					position: absolute;
+					left: -15px;
+					top: 30px;
+					height: 50px;
+					width: 175px;
+					background: #fff;
+					div.like_area{
+						background: #8a3c88;
+						float: right;
+						height: 35px;
+						width: 40px;
+						a{
+							background: url(../img/star.jpg) no-repeat;
+							height: 31px;
+							width: 35px;
+							display: block;
+							margin-left: 6px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
