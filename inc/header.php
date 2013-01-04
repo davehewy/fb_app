@@ -14,17 +14,18 @@
         <script src="assets/js/site.js"></script>
    </head>
    <body>
+	   <div class="wrapper">
+		   <div class="bg">
+				<!-- menu head repeat -->
+				<header id="header">
+					<nav>
+						<a href="index.php" class="logo"></a>
+						<p>
+							<strong>Win a trip to any Kaplan College!</strong>
+							Vote for the best student photos below...
+						</p>
+					</nav>
+				</header>
+				<!-- end header -->
 
-		<!-- menu head repeat -->
-		<header id="header">
-			<nav>
-				<a href="index.php" class="logo"></a>
-				<p>
-					<strong>Win a trip to any Kaplan College!</strong>
-					Vote for the best student photos below...
-				</p>
-			</nav>
-		</header>
-		<!-- end header -->
-
-		<section id="content">
+				<section id="content">

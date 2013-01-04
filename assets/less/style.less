@@ -77,12 +77,21 @@ html[xmlns] .clearfix {
  Site styles
  --------------------------*/
 body{
-	background: @bgcolor url(../img/talent_bg.jpg) no-repeat center bottom;
+	background: @bgcolor url(../img/talent_bg.jpg) no-repeat center top;
 	color: @appcolor;
 	font-family: @appfont,sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	min-height: 700px;
+	min-height: 780px;
+}
+.wrapper{
+	width: @appwidth;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.bg{
+	background: url(../img/judges.png) no-repeat center bottom;
+	min-height: 675px;
 }
 section#content{
 	width: @appwidth;
@@ -153,15 +162,24 @@ section#student_photos{
 		}
 	}
 }
+/*
+ Header
+ --------------------------*/
 header#header{
 	width: @appwidth;
 	margin: 0px auto;
 	nav{
 		margin-top: 80px;
 		background: url(../img/head_repeat.png) repeat-x;
+		height: 116px;
 		p{
 			color: white;
+			float: left;
+			width: 500px;
+			margin-top: 20px;
+			font-size: 1.3em;
 			strong{
+				display: block;
 				font-weight: bold;
 				font-size: 1.5em;
 				color: #f3ef8d !important;
@@ -169,12 +187,49 @@ header#header{
 		}
 	}
 	a.logo{
+		float: left;
 		position: relative;
 		top: -70px;
 		display: block;
 		background: url(../img/kaplan_talent_logo.png) no-repeat;
 		height: 279px;
 		width: 267px;
+		margin-right: 20px;
 	}
 
+}
+/*
+ Footer
+ --------------------------*/
+footer#footer{
+	background: #8d3c87 url(../img/footer_repeat.png) no-repeat;
+	height: 80px;
+	margin-top: -33px;
+	p{
+		float: left;
+		margin: 12px 0 0 30px;
+		width: 450px;
+		font-size: 0.8125em;
+		strong{
+			display: block;
+			font-weight: bold;
+		}
+	}
+	a.k_logo{
+		background: url(../img/kaplan_footer_logo.png) no-repeat;
+		width: 249px;
+		height: 80px;
+		display: block;
+		float: right;
+	}
+}
+/*
+ Index
+ --------------------------*/
+a.splash_images{
+	display: block;
+	background: url(../img/splash_images.png) no-repeat;
+	width: 775px;
+	height: 375px;
+	margin: 33px auto 0px auto;
 }
