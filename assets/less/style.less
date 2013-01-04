@@ -91,11 +91,41 @@ body{
 }
 .bg{
 	background: url(../img/judges.png) no-repeat center bottom;
-	min-height: 675px;
+	min-height: 738px;
 }
 section#content{
 	width: @appwidth;
-	margin:  0px auto;
+	margin:  -50px auto 0 auto;
+	overflow: hidden;
+	div.orange_content{
+		font-size: 0.875em;
+		padding: 45px 15px 15px 15px;
+		overflow: hidden;
+		background: url(../img/orange_repeater.jpg) repeat;
+		color: #8d5e00;
+		width: 720px;
+		margin: 0px auto;
+		border-radius: 5px 5px;
+		h1{
+			font-size: 1.7em;
+		}
+		h2{
+			font-size: 1.3em;
+			line-height: 1;
+		}
+		p{
+			margin: 15px 0;
+			line-height: 1.4 !important;
+		}
+		ul{
+			list-style-type: circle;
+			margin-left: 17px;
+			li{
+				margin: 10px 0;
+				line-height: 1.4 !important;
+			}
+		}
+	}
 }
 section#votes_made{
 	article.blank{
@@ -168,6 +198,8 @@ section#student_photos{
 header#header{
 	width: @appwidth;
 	margin: 0px auto;
+	overflow: hidden;
+	height: 270px;
 	nav{
 		margin-top: 80px;
 		background: url(../img/head_repeat.png) repeat-x;
@@ -231,5 +263,5 @@ a.splash_images{
 	background: url(../img/splash_images.png) no-repeat;
 	width: 775px;
 	height: 375px;
-	margin: 33px auto 0px auto;
+	margin: 0px auto;
 }

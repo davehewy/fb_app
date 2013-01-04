@@ -162,11 +162,41 @@ body {
 }
 .bg {
   background: url(../img/judges.png) no-repeat center bottom;
-  min-height: 675px;
+  min-height: 738px;
 }
 section#content {
   width: 810px;
+  margin: -50px auto 0 auto;
+  overflow: hidden;
+}
+section#content div.orange_content {
+  font-size: 0.875em;
+  padding: 45px 15px 15px 15px;
+  overflow: hidden;
+  background: url(../img/orange_repeater.jpg) repeat;
+  color: #8d5e00;
+  width: 720px;
   margin: 0px auto;
+  border-radius: 5px 5px;
+}
+section#content div.orange_content h1 {
+  font-size: 1.7em;
+}
+section#content div.orange_content h2 {
+  font-size: 1.3em;
+  line-height: 1;
+}
+section#content div.orange_content p {
+  margin: 15px 0;
+  line-height: 1.4 !important;
+}
+section#content div.orange_content ul {
+  list-style-type: circle;
+  margin-left: 17px;
+}
+section#content div.orange_content ul li {
+  margin: 10px 0;
+  line-height: 1.4 !important;
 }
 section#votes_made article.blank {
   background: url(../img/photo_box.jpg) no-repeat;
@@ -231,6 +261,8 @@ section#student_photos ul li div.photo_hover div.frame div.like_area a {
 header#header {
   width: 810px;
   margin: 0px auto;
+  overflow: hidden;
+  height: 270px;
 }
 header#header nav {
   margin-top: 80px;
@@ -293,5 +325,5 @@ a.splash_images {
   background: url(../img/splash_images.png) no-repeat;
   width: 775px;
   height: 375px;
-  margin: 33px auto 0px auto;
+  margin: 0px auto;
 }
